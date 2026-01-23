@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="userName">UserName</label>
+      <input
+        type="text"
+        name="name"
+        id="userName"
+        pattern="[a-zA-z0-9 ]+"
+        title="Only letters allowd capital and small letters. allowd 10 digits" />
+      <br /><br />
+      <label for="">pin</label>
+      <input
+        type="tel"
+        name="pincode"
+        id=""
+        pattern="[0-9]{6}"
+        title="6 digits pincode" />
+      <br /><br />
+      <label for="">adress</label>
+      <input
+        type="text"
+        name="adress"
+        id=""
+        pattern="[a-zA-Z0-9]{3,7}"
+        title="validation error" />
+      <label for="">password</label>
+      <input
+        type="password"
+        name="password"
+        id=""
+        pattern="[a-zA-Z0-9%%^^@*]{3,12}"
+        title="validation error" />
+      <!-- <input type="submit" /> -->
+      <button type="">submit</button>
+    </form>
+  </body>
+</html>

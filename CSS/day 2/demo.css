@@ -1,0 +1,15 @@
+.heading {
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 10px;
+  word-spacing: 50px;
+}
+
+.link {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.para {
+  line-height: 40px;
+}
