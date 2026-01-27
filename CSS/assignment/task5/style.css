@@ -1,0 +1,11 @@
+.div-1 {
+  margin: 10px;
+  height: 300px;
+  border: 3px solid rebeccapurple;
+}
+.div-2 {
+  margin: 10px;
+  height: 300px;
+  border: 3px solid rgb(24, 23, 26);
+  border-radius: 10px;
+}
