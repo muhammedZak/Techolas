@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-card {
+  width: 300px;
+  margin: 3rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-card > :first-child {
+  width: 90%;
+  height: 3px;
+  background-color: blue;
+  margin: 30px auto;
+}
+
+/* img::before {
+  content: '5';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: blue;
+} */
+
+.profile-card > img {
+  width: 50%;
+}
+
+div div {
+  margin-top: 20px;
+}
+
+div div h2 {
+  margin: 20px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.role {
+  margin: 20px 0;
+  color: aqua;
+}
+
+.bio {
+  font-size: large;
+  font-family: sans-serif;
+}
+
+.bio::first-letter {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.bio::selection {
+  background-color: yellow;
+}
+
+div a {
+  display: block;
+  width: 80px;
+  padding: 10px 0;
+  margin: 20px auto 10px auto;
+  border: 2px solid blueviolet;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+div a:active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
