@@ -24,9 +24,9 @@
 }
 
 /* img::before {
-  content: '5';
+  content: '';
   display: block;
-  height: 2px;
+  height: 10px;
   width: 100%;
   background-color: blue;
 } */
@@ -35,7 +35,7 @@
   width: 50%;
 }
 
-div div {
+.profile-card div {
   margin-top: 20px;
 }
 
@@ -63,7 +63,7 @@ div div h2 {
   background-color: yellow;
 }
 
-div a {
+.profile-card a {
   display: block;
   width: 80px;
   padding: 10px 0;
@@ -74,6 +74,6 @@ div a {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-div a:active {
+.profile-card a:active {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
