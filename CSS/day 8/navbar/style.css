@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: grey;
+  padding: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: inherit;
+}
+
+p {
+  font-size: larger;
+}
+
+ul {
+  display: flex;
+  background-color: inherit;
+}
+
+li {
+  margin: 0 2rem;
+  background-color: inherit;
+  list-style-type: none;
+  font-size: larger;
+}
