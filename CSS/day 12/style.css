@@ -1,0 +1,40 @@
+/* .position-relative {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  background-color: #968181;
+  background-color: ;
+  font-size: larger;
+  font-weight: bold;
+  position: relative;
+  top: 200px;
+  left: 200px;
+  position: fixed;
+  top: 200px;
+  left: 500px;
+  z-index: -1;
+} */
+
+.parent {
+  border: 2px solid;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid;
+  border-radius: 20px;
+  position: absolute;
+  /* bottom: 50%; */
+  /* right: 50%; */
+  right: 30%;
+  /* left: 50%; */
+  /* top: 50%; */
+  bottom: 30%;
+}
