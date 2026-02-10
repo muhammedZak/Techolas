@@ -1,0 +1,23 @@
+div {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  background: gray;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+
+  /* transition-property: width, background-color;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  transition-timing-function: ease-in; */
+
+  transition:
+    width 1s ease-out,
+    background-color 1s ease-in;
+}
+
+div:hover {
+  width: 500px;
+  background-color: red;
+}
