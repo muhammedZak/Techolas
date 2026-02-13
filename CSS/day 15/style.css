@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(187, 213, 213, 0.648);
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  letter-spacing: 4px;
+  border-bottom: 3px solid;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  transition:
+    letter-spacing ease-in 1s,
+    text-shadow ease-in 1s,
+    transform ease 1s;
+}
+
+h1:hover {
+  transform: scale(1.5);
+  letter-spacing: 5px;
+  text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.6);
+}
+
+main {
+  padding: 100px;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 128, 0, 0.925);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aqua;
+  font-size: 100px;
+  font-weight: bold;
+  border-radius: 5px 25px 5px 20px;
+  transition: transform ease 3s;
+}
+
+.box:hover {
+  /* transform: rotate(45deg); */
+  /* transform: rotate(45deg); */
+  /* transform: rotate(1turn); */
+  /* transform: rotateX(135deg); */
+  /* transform: rotateY(135deg); */
+
+  /* translate */
+
+  /* transform: translate(500px); */
+  /* transform: translateX(500px); */
+  /* transform: translateY(500px); */
+  /* transform: translate(600px, 50px); */
+  /* transform: rotate(1turn) translate(600px); */
+  /* transform: scale(-2); */
+  /* transform: scaleY(2); */
+  /* transform: scaleX(2); */
+  transform: skew(30deg, 40deg);
+}
