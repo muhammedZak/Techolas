@@ -1,0 +1,160 @@
+----------------------
+COLOR SYSTEM
+----------------------
+
+1. Primary color
+2. Secondary color
+3. Accent color
+4. Neutral colors
+5. Semantic colors
+
+Primary:    #0f172a   (Dark blue)
+Secondary:  #111827   (Dark gray)
+Accent:     #3b82f6   (Professional blue)
+Accent 2:   #06b6d4   (Cyan highlight)
+Background: #f8fafc   (Light background)
+Surface:    #ffffff   (Cards, navbar)
+Text:       #0f172a   (Main text)
+Text light: #64748b   (Secondary text)
+Border:     #e2e8f0
+
+
+[ Navbar ] → Primary color
+
+[ Hero Section ]
+  Background → Background color
+  Text → Text color
+  Button → Accent color
+
+[ Projects Section ]
+  Card → Surface color
+  Border → Border color
+  Button → Accent color
+
+[ Footer ]
+  Background → Secondary color
+
+-----------------------
+TYPOGRAPHY SYSTEM
+-----------------------
+
+
+Font family
+Font sizes
+Font weights
+Line height
+Text hierarchy
+Reusable classes
+
+Create Typography Variables
+---------------------------
+:root {
+
+  /* Font Family */
+  --font-primary: 'Inter', sans-serif;
+
+  /* Font Sizes */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+
+  /* Font Weights */
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Line Heights */
+  --line-tight: 1.2;
+  --line-normal: 1.5;
+  --line-relaxed: 1.7;
+
+}
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-md);
+  font-weight: var(--weight-normal);
+  line-height: var(--line-normal);
+  color: var(--color-text);
+}
+h1 {
+  font-size: var(--text-5xl);
+  font-weight: var(--weight-bold);
+  line-height: var(--line-tight);
+}
+
+h2 {
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-semibold);
+}
+
+h3 {
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-semibold);
+}
+
+h4 {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-medium);
+}
+
+h5 {
+  font-size: var(--text-xl);
+  font-weight: var(--weight-medium);
+}
+
+h6 {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-medium);
+}
+p {
+  font-size: var(--text-md);
+  line-height: var(--line-relaxed);
+  color: var(--color-text-light);
+}
+.text-xs { font-size: var(--text-xs); }
+.text-sm { font-size: var(--text-sm); }
+.text-md { font-size: var(--text-md); }
+.text-lg { font-size: var(--text-lg); }
+.text-xl { font-size: var(--text-xl); }
+
+.font-light { font-weight: var(--weight-light); }
+.font-normal { font-weight: var(--weight-normal); }
+.font-medium { font-weight: var(--weight-medium); }
+.font-semibold { font-weight: var(--weight-semibold); }
+.font-bold { font-weight: var(--weight-bold); }
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.hero-title {
+  font-size: var(--text-5xl);
+  font-weight: var(--weight-bold);
+}
+
+.hero-subtitle {
+  font-size: var(--text-xl);
+  color: var(--color-text-light);
+  margin-top: 10px;
+}
+
+Hero Name → 48px bold
+Section Title → 36px semibold
+Card Title → 24px medium
+Body Text → 16px normal
+Small Text → 14px light
+
+h1 → Most important
+h2 → Section titles
+h3 → Card titles
+p  → Content
+small → Secondary info
+

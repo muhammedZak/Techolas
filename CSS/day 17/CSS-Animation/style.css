@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 100px;
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  background-color: red;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Animation */
+
+  animation-duration: 3s;
+  animation-name: move;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(200px, 200px);
+    border-radius: 50%;
+    /* transform: rotateX(45deg); */
+  }
+}
