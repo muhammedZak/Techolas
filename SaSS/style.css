@@ -1,0 +1,44 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+}
+
+#container {
+  width: 300px;
+  border: 1px solid;
+  padding: 30px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 6px 12px;
+}
+
+.my-Class {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: lowercase;
+  text-overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+body {
+  margin: 250px;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+
+  /* ANIMATION */
+
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0.2ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin {
+  0% {
+  }
+  50% {
+    transform: rotate(0);
+    border-radius: 0;
+    /* scale: 1; */
+  }
+  100% {
+    scale: 2;
+    transform: rotate(360deg);
+    border-radius: 100%;
+  }
+}

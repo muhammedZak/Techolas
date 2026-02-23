@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zay Commerce</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <script src="script.js" defer></script>
+  </head>
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Website Clone</title>
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" />
+
+      <link rel="stylesheet" href="custom.css" />
+    </head>
+    <body>
+      <!-- NAVBAR -->
+
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <div class="h1">
+            <a class="text-decoration-none" href="">Zay</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-lg-flex"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav flex-grow-1 d-lg-flex justify-content-center">
+              <li class="nav-item my-2 my-lg-0 mx-lg-5">
+                <a class="nav-link" href="">Home</a>
+              </li>
+              <li class="nav-item my-2 my-lg-0 mx-lg-5">
+                <a class="nav-link" href="">About</a>
+              </li>
+              <li class="nav-item my-2 my-lg-0 mx-lg-5">
+                <a class="nav-link" href="">Shop</a>
+              </li>
+              <li class="nav-item my-2 my-lg-0 mx-lg-5">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                  Contact
+                </button>
+              </li>
+            </ul>
+            <form action="" class="d-flex gap-1 align-self-end">
+              <div class="d-flex d-lg-none border border-1 w-100">
+                <input
+                  class="w-100 border border-0 py-2"
+                  type="text"
+                  placeholder="search.."
+                  name=""
+                  id="" />
+
+                <i class="bi bi-search py-2 px-2"></i>
+              </div>
+              <button class="btn d-none d-lg-block border border-0">
+                <i class="bi bi-search py-2 px-2"></i>
+              </button>
+              <button class="btn">
+                <i class="bi bi-cart"></i>
+              </button>
+              <button class="btn">
+                <i class="bi bi-person"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- MODAL -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Contact us
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="needs-validation row g-3" novalidate>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail4"
+                    required />
+                  <div class="invalid-feedback">
+                    Please provide a valid email.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword4"
+                    required />
+                  <div class="invalid-feedback">
+                    Please provide a valid password.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="1234 Main St"
+                    required />
+                  <div class="invalid-feedback">
+                    Please provide a valid Address.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label"
+                    >Address 2</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress2"
+                    placeholder="Apartment, studio, or floor"
+                    required />
+                  <div class="invalid-feedback">
+                    Please provide a valid Address.
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCity"
+                    required />
+                  <div class="invalid-feedback">Please provide your city.</div>
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select" required>
+                    <option value="" selected disabled>Select State</option>
+                    <!-- <option>...</option>  -->
+                  </select>
+                  <div class="invalid-feedback">Please select your state.</div>
+                </div>
+                <div class="col-md-4">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputZip"
+                    required />
+                  <div class="invalid-feedback">Please provide valid Zip.</div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck" />
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO -->
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row align-items-center carousel-content">
+                <div class="col-lg-6 text-center">
+                  <img
+                    src="https://zay-e-commerce-flax.vercel.app/assets/img/banner_img_01.jpg"
+                    class="img-fluid"
+                    alt="" />
+                </div>
+
+                <div class="col-lg-6">
+                  <h1 class="display-4 fw-bold">Proident occaecat</h1>
+                  <h3 class="fw-light">Aliquip ex ea commodo consequat</h3>
+                  <p class="lead">
+                    You are permitted to use this Zay CSS template for your
+                    commercial websites. You are not permitted to re-distribute
+                    the template ZIP file in any kind of template collection
+                    websites.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row align-items-center carousel-content">
+                <div class="col-lg-6 text-center">
+                  <img
+                    src="https://zay-e-commerce-flax.vercel.app/assets/img/banner_img_02.jpg"
+                    class="img-fluid"
+                    alt="" />
+                </div>
+
+                <div class="col-lg-6">
+                  <h1 class="display-4 fw-bold">Proident occaecat</h1>
+                  <h3 class="fw-light">Aliquip ex ea commodo consequat</h3>
+                  <p class="lead">
+                    You are permitted to use this Zay CSS template for your
+                    commercial websites. You are not permitted to re-distribute
+                    the template ZIP file in any kind of template collection
+                    websites.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row align-items-center carousel-content">
+                <div class="col-lg-6 text-center">
+                  <img
+                    src="https://zay-e-commerce-flax.vercel.app/assets/img/banner_img_03.jpg"
+                    class="img-fluid"
+                    alt="" />
+                </div>
+
+                <div class="col-lg-6">
+                  <p class="display-4 fw-bold">Proident occaecat</p>
+                  <h3 class="fw-light">Aliquip ex ea commodo consequat</h3>
+                  <p class="lead">
+                    You are permitted to use this Zay CSS template for your
+                    commercial websites. You are not permitted to re-distribute
+                    the template ZIP file in any kind of template collection
+                    websites.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <i class="bi bi-chevron-left fs-1 text-dark"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <i class="bi bi-chevron-right fs-1 text-dark"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- CARDS -->
+      <section class="container my-5">
+        <div class="row text-center">
+          <div class="col-lg-6 m-auto">
+            <h1>Categories of The Month</h1>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4 p-5 mt-4">
+            <div class="card border border-0">
+              <img
+                src="https://zay-e-commerce-flax.vercel.app/assets/img/category_img_02.jpg"
+                class="img-fluid rounded-circle"
+                alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title">Shoes</h5>
+                <a href="#" class="btn btn-card">Go Shop</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 p-5 mt-4">
+            <div class="card border border-0">
+              <img
+                src="https://zay-e-commerce-flax.vercel.app/assets/img/category_img_01.jpg"
+                class="img-fluid rounded-circle"
+                alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title">Watches</h5>
+                <a href="#" class="btn btn-card">Go Shop</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 p-5 mt-4">
+            <div class="card border border-0">
+              <img
+                src="https://zay-e-commerce-flax.vercel.app/assets/img/category_img_03.jpg"
+                class="img-fluid rounded-circle"
+                alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title">Accessories</h5>
+                <a href="#" class="btn btn-card">Go Shop</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FEATURE -->
+      <section class="feature-section">
+        <div class="container px-5 px-md-0 py-5">
+          <div class="row text-center">
+            <div class="col-lg-6 m-auto">
+              <h1>Featured Product</h1>
+              <p>
+                Reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4 mt-4">
+              <div class="card h-100 border border-0">
+                <img
+                  src="https://zay-e-commerce-flax.vercel.app/assets/img/feature_prod_01.jpg"
+                  class="img-fluid"
+                  alt="..." />
+                <div class="card-body">
+                  <ul class="d-flex justify-content-between list-unstyled">
+                    <div class="d-flex">
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                    </div>
+                    <li class="text-muted align-self-end">$360.00</li>
+                  </ul>
+                  <h5 class="card-title">Gym Weight</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt in culpa qui officia deserunt.
+                  </p>
+                  <p>Reviews (24)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mt-4">
+              <div class="card h-100 border border-0">
+                <img
+                  src="https://zay-e-commerce-flax.vercel.app/assets/img/feature_prod_02.jpg"
+                  class="img-fluid"
+                  alt="..." />
+                <div class="card-body">
+                  <ul class="d-flex justify-content-between list-unstyled">
+                    <div class="d-flex">
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                    </div>
+                    <li class="text-muted align-self-end">$360.00</li>
+                  </ul>
+                  <h5 class="card-title">Cloud Nike Shoes</h5>
+                  <p>
+                    Aenean gravida dignissim finibus. Nullam ipsum diam, posuere
+                    vitae pharetra sed, commodo ullamcorper.
+                  </p>
+                  <p>Reviews (24)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mt-4">
+              <div class="card h-100 border-0">
+                <img
+                  src="https://zay-e-commerce-flax.vercel.app/assets/img/feature_prod_03.jpg"
+                  class="img-fluid"
+                  alt="..." />
+                <div class="card-body">
+                  <ul class="d-flex justify-content-between list-unstyled">
+                    <div class="d-flex">
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                      <li><i class="bi bi-star-fill text-warning"></i></li>
+                    </div>
+                    <li class="text-muted align-self-end">$360.00</li>
+                  </ul>
+                  <h5 class="card-title">Summer Addides Shoes</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt in culpa qui officia deserunt.
+                  </p>
+                  <p>Reviews (24)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="bg-dark">
+        <div class="container px-5 px-md-0 py-5">
+          <div class="row">
+            <div class="col-12 col-md-4 mt-4">
+              <h4 class="mb-2 text-light">Zay Shop</h4>
+              <hr class="text-danger" />
+              <ul class="list-unstyled text-light">
+                <li class="mb-1">123 Consectetur at ligula 10660</li>
+                <li class="mb-1">010-020-0340</li>
+                <li class="mb-1">info@company.com</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 mt-4">
+              <h4 class="mb-2 text-light">Products</h4>
+              <hr class="text-danger" />
+              <ul class="list-unstyled text-light">
+                <li class="mb-1">Luxury</li>
+                <li class="mb-1">Sport Wear</li>
+                <li class="mb-1">Men's Shoes</li>
+                <li class="mb-1">Women's Shoes</li>
+                <li class="mb-1">Popular Dress</li>
+                <li class="mb-1">Gym Accessories</li>
+                <li class="mb-1">Sport Shoes</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 mt-4">
+              <h4 class="mb-2 text-light">Further Info</h4>
+              <hr class="text-danger" />
+              <ul class="list-unstyled text-light">
+                <li class="mb-1">Home</li>
+                <li class="mb-1">About Us</li>
+                <li class="mb-1">Shop Locations</li>
+                <li class="mb-1">FAQs</li>
+                <li class="mb-1">Contact</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="text-danger" />
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="w-25 d-inline-block">
+              <ul class="list-unstyled text-white d-flex gap-4 me-auto">
+                <li>F</li>
+                <li>INs</li>
+                <li>TW</li>
+                <li>IN</li>
+              </ul>
+            </div>
+            <div class="input-group mb-3 w-50">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email address"
+                aria-label="Email address"
+                aria-describedby="basic-addon2" />
+              <span class="input-group-text" id="basic-addon2">Subscribe</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    </body>
+  </html>
+</html>

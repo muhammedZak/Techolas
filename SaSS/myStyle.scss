@@ -1,7 +1,11 @@
+@import 'reset';
+
 $myFont: Helvetica, sans-serif;
 $myColor: red;
 $myFontSize: 18px;
-$myWidth: 680px;
+$myWidth: 300px;
+$myPady: 30px;
+$myTextColor: rgb(186, 215, 186);
 
 body {
   font-family: $myFont;
@@ -11,4 +15,36 @@ body {
 
 #container {
   width: $myWidth;
+  border: 1px solid;
+  padding: $myPady;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 6px 12px;
+  }
+}
+
+.my-Class {
+  font: {
+    family: Helvetica, sans-serif;
+    size: 18px;
+    weight: bold;
+  }
+
+  text: {
+    align: center;
+    transform: lowercase;
+    overflow: hidden;
+  }
 }
