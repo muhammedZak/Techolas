@@ -1,0 +1,12 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#hero-section {
+  height: 80vh;
+}
+
+.card img {
+  height: 150px;
+  /* object-fit: cover; */
+}
