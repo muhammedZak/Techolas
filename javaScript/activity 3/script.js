@@ -244,12 +244,31 @@
 // Example Input: array = [1, 2, 3, 2, 4], searchFor = 2, replaceWith = 10
 // Expected Output: [1, 10, 3, 10, 4]
 
-const arr = [1, 2, 3, 2, 4];
+// const arr = [1, 2, 3, 2, 4];
 
-for (const ele of arr) {
-  if (ele === 2) {
-    
-  }
-}
+// for (const ele of arr) {
+//   if (ele === 2) {
+//     const index = arr.indexOf(ele);
+//     arr[index] = 10;
+//   }
+// }
 
-// console.log(arr)
+// console.log(arr);
+
+// Challenge 1: Prime Number Finder
+// Write a program that finds all prime numbers up to N:
+// • Use nested for loops
+// • Check each number for divisors
+// • Store primes in array
+// • Return all primes
+// Example Input: N = 20
+// Expected Output: [2, 3, 5, 7, 11, 13, 17, 19]
+
+// const n = 20;
+
+// for (let i = 1; i <= n; i++) {
+//     if()
+// }
+
+const greet = () => console.log('HIII');
+greet();
