@@ -1,7 +1,7 @@
 localStorage.setItem('name', 'Zakariya');
 
 localStorage.setItem(
-  'Person',
+  'person',
   JSON.stringify({
     name: 'Zakariya',
     age: 31,
@@ -12,16 +12,20 @@ localStorage.setItem(
   }),
 );
 
-const data = JSON.stringify({
-  name: 'Zakariya',
-  age: 31,
-  address: {
-    city: 'Tirur',
-    pin: 676102,
-  },
-});
+// const data = JSON.stringify({
+//   name: 'Zakariya',
+//   age: 31,
+//   address: {
+//     city: 'Tirur',
+//     pin: 676102,
+//   },
+// });
 
-console.log(data);
+// const data = localStorage.getItem('person');
 
-const DATA = JSON.parse(data);
-console.log(DATA);
+// console.log(JSON.parse(data));
+
+// const DATA = JSON.parse(data);
+// console.log(DATA);
+
+localStorage.removeItem('name');
