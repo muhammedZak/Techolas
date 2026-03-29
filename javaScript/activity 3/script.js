@@ -270,5 +270,19 @@
 //     if()
 // }
 
-const greet = () => console.log('HIII');
-greet();
+// const greet = () => console.log('HIII');
+// greet();
+
+const browserType = 'mozilla';
+
+if (browserType.startsWith('zilla')) {
+  console.log('It starts with zilla!');
+} else {
+  console.log("It DOESN'T start with zilla!");
+}
+
+if (browserType.endsWith('zilla')) {
+  console.log('It ends with zilla!');
+} else {
+  console.log("It DOESN'T start with zilla!");
+}
