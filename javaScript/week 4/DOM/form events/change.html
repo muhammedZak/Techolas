@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="" id="country">
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+    </select>
+
+    <input type="text" name="" id="email" placeholder="email" />
+
+    <script>
+      document
+        .getElementById('country')
+        .addEventListener('change', function () {
+          console.log(this.value);
+          alert('You selected: ' + this.value);
+        });
+      document.getElementById('email').addEventListener('focus', function () {
+        console.log(this);
+        this.style.backgroundColor = 'blue';
+      });
+    </script>
+  </body>
+</html>
