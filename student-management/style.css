@@ -1,0 +1,16 @@
+body {
+  background: #a39494;
+}
+
+header {
+    background: #575555;
+}
+
+.labal-width {
+  width: 150px;
+}
+
+.modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
