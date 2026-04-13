@@ -72,3 +72,58 @@
 // Promise.any([p1, p3, p2])
 //   .then((result) => console.log('All result : ', result))
 //   .catch((err) => console.log(err));
+
+function getUser() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Jithin');
+    }, 1000);
+  });
+}
+
+function getUserDetails(userName) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`${userName} is a developer`);
+    }, 1000);
+  });
+}
+
+function getUserAge(userDetails) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(`${userDetails}, age 25`);
+    }, 1000);
+  });
+}
+
+// getUser()
+//   .then((name) => {
+//     console.log(name);
+//     return getUserDetails(name);
+//   })
+//   .then((details) => {
+//     console.log(details);
+//     return getUserAge(details);
+//   })
+//   .then((user) => {
+//     console.log(user);
+//   })
+//   .catch((err) => {
+//     console.log('Error : ', err);
+//   });
+
+const userData = async () => {
+  try {
+    const name = await getUser();
+    console.log(name);
+    const userDetails = await getUserDetails(name);
+    console.log(userDetails);
+    const user = await getUserAge(userDetails);
+    console.log(user);
+  } catch (error) {
+    console.log('Error: ', error);
+  }
+};
+
+userData();

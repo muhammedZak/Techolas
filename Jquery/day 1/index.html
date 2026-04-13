@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1 id="text">color change</h1>
+    <h1 id="text2">color change</h1>
+    <button id="btn">Cahnge color</button>
+
+    <p class="para"></p> -->
+
+    <div id="hoverBox" style="padding: 20px; border: 2px solid blue">
+      Move Mouse here
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.js"
+      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+      crossorigin="anonymous"></script>
+
+    <script>
+      $('#hoverBox').mouseleave(function () {
+        $(this).css({ backgroundColor: 'gray', color: 'white' });
+      });
+
+      //   $('#hoverBox').hover(
+      //     function () {
+      //       $(this).css({ backgroundColor: 'gray', color: 'white' });
+      //     },
+      //     function () {
+      //       $(this).css({ backgroundColor: 'white', color: 'black' });
+      //     },
+      //   );
+
+      //   $('#text').css('color', 'red');
+      //   $('#text2').css({ color: 'white', padding: '30px', background: 'green' });
+      //   $('#btn').click(function () {
+      //     $('.para').text('Button Clicked');
+      //   });
+      //   $('#btn').dblclick(function () {
+      //     $('.para').text('Button double Clicked');
+      //   });
+    </script>
+  </body>
+</html>
