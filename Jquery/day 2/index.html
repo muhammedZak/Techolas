@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+
+    <div class="enterBox" style="border: 1px solid black; padding: 20px">
+      Hover into the box🤣
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.js"
+      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+      crossorigin="anonymous"></script>
+
+    <script>
+      $('h1').css('color', 'blue');
+
+      $('.enterBox').mouseenter(function () {
+        $(this).css({ border: '10px solid green', padding: '30px' });
+        $(this).append('<p>Mouse Entered</p>');
+      });
+    </script>
+  </body>
+</html>
